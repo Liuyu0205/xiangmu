@@ -1,0 +1,326 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+a {
+    cursor: pointer;
+}
+html,
+body {
+    font-size: 62.5%;
+}
+@mixin pos($p:absolute) {
+    position: $p;
+}
+.box {
+    //头部选项卡开始
+    header {
+        width: 100%;
+        background: #f8f8f9;
+        @include pos(fixed);
+        top: 4rem;
+        z-index: 999;
+        ul {
+            width: 100%;
+            display: flex;
+            padding: 1rem 0 0;
+            -webkit-justify-content: space-around;
+            li {
+                width: 20%;
+                padding-bottom: 1rem;
+                text-align: center;
+                a {
+                    color: #353535;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    // 头部选项卡结束 
+    //网页主体内容开始
+    .person {
+        width: 100%;
+        -webkit-flex-grow: 1;
+        margin-bottom: 5rem;
+        @include pos(relative);
+        margin-top: 7.6rem;
+        //      banner
+        .banner {
+            width: 100%;
+            height: 10rem;
+            @include pos(relative);
+            .swiper-slide {
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            //分页器点的颜色
+            .swiper-pagination-bullet {
+                background: white;
+                opacity: 0.5;
+            }
+            //分页器当前点的颜色
+            .swiper-pagination-bullet-active {
+                background: #d53b2c;
+            }
+            //分页器背景
+            .swiper-pagination {
+                @include pos();
+                bottom: 0;
+            }
+        }
+        //      bannerEnd
+        
+        //      icon
+        .icon {
+            width: 100%;
+            height: 7.5rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #F0F0F0;
+            @include pos(relative);
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                -webkit-justify-content: space-around;
+                @include pos(relative);
+                li {
+                    width: 30%;
+                    height: 100%;
+                    text-align: center;
+                    @include pos(relative);
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            width: 70%;
+                            height: 70%;
+                        }
+                        p {
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+        //      iconEnd
+        
+        //      推荐歌单  最新音乐  主播电台
+        .mend {
+            width: 100%;
+            @include pos(relative);
+            .p {
+                width: 99%;
+                border-left: 2px solid #d53b2c;
+                @include pos(relative);
+                margin: 1rem 0;
+                a {
+                    color: #353535;
+                    font-size: 1.8rem;
+                    @include pos(relative);
+                    left: 1rem;
+                    b {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border: solid #707071;
+                        border-width: 0 0 0.0625rem 0.0625rem;
+                        display: inline-block;
+                        transform: rotate(230deg);
+                        @include pos(relative);
+                        top: -0.2rem;
+                    }
+                }
+            }
+            ul {
+                width: 100%;
+                @include pos(relative);
+                display: flex;
+                -webkit-justify-content: space-between;
+                flex-flow: wrap;
+                li {
+                    width: 32.5%;
+                    float: left;
+                    padding-bottom: 1rem;
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        padding: 0.5rem;
+                        color: #39393a;
+                        font-size: 1.2rem;
+                        span {
+                            @include pos(relative);
+                            color: #a5a5a5;
+                            top: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        //      推荐歌单  最新音乐  主播电台 结束
+        
+        //      独家放送  推荐MV  
+        .alone {
+            width: 100%;
+            @include pos(relative);
+            .p {
+                width: 99%;
+                border-left: 2px solid #d53b2c;
+                @include pos(relative);
+                margin: 1rem 0;
+                a {
+                    color: #353535;
+                    font-size: 1.8rem;
+                    @include pos(relative);
+                    left: 1rem;
+                    b {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border: solid #707071;
+                        border-width: 0 0 0.0625rem 0.0625rem;
+                        display: inline-block;
+                        transform: rotate(230deg);
+                        @include pos(relative);
+                        top: -0.2rem;
+                    }
+                }
+            }
+            ul {
+                width: 100%;
+                @include pos(relative);
+                display: flex;
+                -webkit-justify-content: space-between;
+                flex-flow: wrap;
+                li {
+                    width: 49.5%;
+                    float: left;
+                    padding-bottom: 1rem;
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        padding: 0.5rem;
+                        color: #39393a;
+                        font-size: 1.2rem;
+                        span {
+                            @include pos(relative);
+                            color: #a5a5a5;
+                            top: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        //独家放送  推荐MV 结束
+        
+        //福利黑洞
+        .welfare {
+            width: 100%;
+            height: 12rem;
+            div {
+                width: 100%;
+                height: 10rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            p {
+                padding: 0.5rem;
+                font-size: 1.3rem;
+                color: #363637;
+            }
+        }
+        //福利黑洞结束
+        
+        //精选专栏
+        .select {
+            width: 100%;
+            @include pos(relative);
+            .p {
+                width: 99%;
+                border-left: 2px solid #d53b2c;
+                @include pos(relative);
+                margin: 1rem 0;
+                a {
+                    color: #353535;
+                    font-size: 1.8rem;
+                    @include pos(relative);
+                    left: 1rem;
+                    b {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border: solid #707071;
+                        border-width: 0 0 0.0625rem 0.0625rem;
+                        display: inline-block;
+                        transform: rotate(230deg);
+                        @include pos(relative);
+                        top: -0.2rem;
+                    }
+                }
+            }
+            ul {
+                width: 100%;
+                border-top: 1px solid #e2e2e3;
+                @include pos(relative);
+                li {
+                    width: 100%;
+                    border-bottom: 1px solid #e2e2e3;
+                    height: 7rem;
+                    @include pos(relative);
+                    margin-bottom: 0.3rem;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        -webkit-justify-content: space-between;
+                        @include pos(relative);
+                        .select_left {
+                            width: 60%;
+                            height: 100%;
+                            padding: 1rem 0 1rem 1rem;
+                            @include pos(relative);
+                            p {
+                                color: #323233;
+                                font-size: 1.3rem;
+                                @include pos(relative);
+                                span {
+                                    border: 1px solid #d5382a;
+                                    color: #d5382a;
+                                    padding: 0 0.2rem;
+                                }
+                            }
+                            .select_span {
+                                color: #99999a;
+                                padding: 1rem 0;
+                                @include pos(relative);
+                                top: 1rem;
+                            }
+                        }
+                        .select_right {
+                            width: 40%;
+                            height: 100%;
+                            @include pos(relative);
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                @include pos(relative);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //精选专栏结束
+    }
+    //  网页主体内容结束
+}

@@ -1,0 +1,123 @@
+{
+	"Class": {
+		"head": [
+			{
+				"img": "tubiao_1_03.jpg",
+				"txt": "电台分类"
+			}, {
+				"img": "tubiao_2_03.jpg",
+				"txt": "电台排行"
+			}
+		],
+		"hot": {
+			"head": [
+				{
+					"txt": "热门分类"
+				}, {
+					"txt": "更多分类"
+				}
+			],
+			"icon": {
+				"one": [
+					{
+						"img": "remen_03.jpg",
+						"img1": "remen_05.jpg",
+						"txt": "创作|翻唱",
+						"txt1": "情感调频"
+					}, {
+						"img": "remen_09.jpg",
+						"img1": "remen_10.jpg",
+						"txt": "脱口秀",
+						"txt1": "有声小说"
+					}, {
+						"img": "remen_13.jpg",
+						"img1": "remen_14.jpg",
+						"txt": "音乐故事",
+						"txt1": "人文故事"
+					}
+				],
+				"two": [
+					{
+						"img": "more_03.jpg",
+						"img1": "more_05.jpg",
+						"txt": "美文读物",
+						"txt1": "外语世界"
+					}, {
+						"img": "more_10.jpg",
+						"img1": "more_12.jpg",
+						"txt": "明星做主播",
+						"txt1": "3D|电子"
+					}, {
+						"img": "more_15.jpg",
+						"img1": "more_16.jpg",
+						"txt": "亲子宝贝",
+						"txt1": "校园|教育"
+					}, {
+						"img": "more_20.jpg",
+						"img1": "more_19.jpg",
+						"txt": "二次元",
+						"txt1": "旅途|城市"
+					}, {
+						"img": "more_23.jpg",
+						"img1": "more_24.jpg",
+						"txt": "娱乐|影视",
+						"txt1": "广播剧"
+					}
+				]
+			}
+		}
+	},
+	
+	"everyDay":{
+				"head":[
+						{"txt":"每天听些好节目"}
+				],
+				"everyLi":[
+						{"img":"meitian_02.jpg","txt":"王菲、窦靖童、窦唯：愿世...","txt1":"淘漉音乐"},
+						{"img":"meitian_05.jpg","txt":"19年前的金城武————《不夜...","txt1":"我爱电影"},
+						{"img":"meitian_07.jpg","txt":"教你一首告白必听的歌曲","txt1":"早安英文"}
+				]
+	},
+	
+	"ele":{
+			"head":[
+						{"txt":"电台个性推荐"}
+				],
+			"eleLi":[
+					{"img":"diantai_02.jpg","txt":"小北电台"},
+					{"img":"diantai_04.jpg","txt":"米莉.听见花开"},
+					{"img":"diantai_06.jpg","txt":"民谣在路上Folk"},
+					{"img":"diantai_10.jpg","txt":"早餐英语-最好听的英文课"},
+					{"img":"diantai_11.jpg","txt":"原谅我眼里满是人间烟火"},
+					{"img":"diantai_12.jpg","txt":"艳秋电台"}
+			]	
+	},
+	"read":{
+			"head":[
+						{"txt":"美文读物"},
+						{"txt":"有声小说"},
+						{"txt":"明星做主播"},
+						{"txt":"脱口秀"}
+				],
+			"one":[
+						{"img":"meiwen_02.jpg","txt":"最牛英文书单"},
+						{"img":"meiwen_04.jpg","txt":"任志宏诵读经典"},
+						{"img":"meiwen_06.jpg","txt":"网瘾少女的深夜"}
+				],
+			"two":[
+						{"img":"yousheng_02.jpg","txt":"《抬棺匠》"},
+						{"img":"yousheng_04.jpg","txt":"故事会提审"},
+						{"img":"yousheng_06.jpg","txt":"阿甘正传【原著】"}
+				],
+			"thr":[
+						{"img":"mingxing_02.jpg","txt":"野马电台"},
+						{"img":"mingxing_04.jpg","txt":"《二刘之辈》"},
+						{"img":"mingxing_06.jpg","txt":"黄渤的独家电台"}
+				],
+			"four":[
+						{"img":"tuo_02.jpg","txt":"笑料百出"},
+						{"img":"tuo_04.jpg","txt":"飞碟说"},
+						{"img":"tuo_06.jpg","txt":"伦敦华语电台"}
+				]
+	}
+}

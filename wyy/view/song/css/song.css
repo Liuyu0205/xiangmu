@@ -1,0 +1,100 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+a {
+  cursor: pointer; }
+
+html,
+body {
+  font-size: 62.5%; }
+
+.box .song {
+  width: 100%;
+  -webkit-flex-grow: 1;
+  margin-bottom: 5rem;
+  position: relative;
+  margin-top: 7.6rem; }
+  .box .song .banner {
+    width: 100%;
+    height: 10rem;
+    position: relative; }
+    .box .song .banner img {
+      width: 100%;
+      height: 100%; }
+  .box .song .all {
+    width: 100%;
+    height: 6rem;
+    position: relative;
+    display: flex;
+    -webkit-justify-content: space-around; }
+    .box .song .all .alls {
+      width: 45%;
+      height: 100%;
+      position: relative;
+      top: 1.2rem; }
+      .box .song .all .alls p {
+        width: 70%;
+        height: 50%;
+        border: 1px solid #cacacb;
+        color: #3b3b3c;
+        position: relative;
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.5rem;
+        border-radius: 5rem; }
+        .box .song .all .alls p b {
+          width: 0.8rem;
+          height: 0.8rem;
+          border: solid #cacacb;
+          border-width: 0 0 0.0625rem 0.0625rem;
+          display: inline-block;
+          transform: rotate(230deg);
+          position: relative; }
+    .box .song .all .allUl {
+      width: 45%;
+      height: 100%;
+      position: relative;
+      top: 1.7rem; }
+      .box .song .all .allUl ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        -webkit-justify-content: space-between; }
+        .box .song .all .allUl ul li a {
+          color: #6e6e6f;
+          font-size: 1.5rem; }
+        .box .song .all .allUl ul li:nth-child(2) a {
+          color: #e4e4e5; }
+        .box .song .all .allUl ul li:nth-child(4) a {
+          color: #e4e4e5; }
+  .box .song .song_class {
+    width: 100%;
+    position: relative; }
+    .box .song .song_class ul {
+      width: 100%;
+      position: relative;
+      display: flex;
+      -webkit-justify-content: space-between;
+      flex-flow: wrap; }
+      .box .song .song_class ul li {
+        width: 49.5%;
+        float: left;
+        padding-bottom: 1rem; }
+        .box .song .song_class ul li img {
+          width: 100%;
+          height: 13rem; }
+        .box .song .song_class ul li p {
+          padding: 0.5rem;
+          color: #39393a;
+          font-size: 1.2rem; }
+          .box .song .song_class ul li p span {
+            position: relative;
+            color: #a5a5a5;
+            top: 0.2rem; }
+
+/*# sourceMappingURL=song.css.map */

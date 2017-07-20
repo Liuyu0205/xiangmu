@@ -1,0 +1,108 @@
+{
+			"banner":[
+						{"img":"banner_02.jpg"},
+						{"img":"banner-2_02.jpg"},
+						{"img":"banner_02.jpg"},
+						{"img":"banner-2_02.jpg"},
+						{"img":"banner_02.jpg"},
+						{"img":"banner-2_02.jpg"},
+						{"img":"banner_02.jpg"},
+						{"img":"banner-2_02.jpg"}
+						
+			],
+			
+			
+			"icon":[
+						{"img":"tubiao_03.jpg","txt":"私人FM"},
+						{"img":"tubiao_05.jpg","txt":"每日歌曲推荐"},
+						{"img":"tubiao_07.gif","txt":"云音乐热歌榜"}
+			],	
+			
+				
+			"mend":{
+					"head":[
+								{"txt":"推荐歌单"},{"txt":"最新音乐"},{"txt":"主播电台"}
+					],
+					"icon":{
+							"one":[
+								{"img":"con-1_02.gif","txt":"地球日;你有什么话想对地球..."},
+								{"img":"con-1_04.gif","txt":"古风|描金绣凤恋恋旧日好..."},
+								{"img":"con-1_06.gif","txt":"【德语】好听才是正经事.."},
+								{"img":"con-1_10.gif","txt":"【节奏控】超带感的英文歌（..."},
+								{"img":"con-1_11.gif","txt":"暖人心雪的钢琴曲"},
+								{"img":"con-1_12.jpg","txt":"也许你错过了的好民谣"}
+							],
+							"two":[
+								{"img":"zuixin_02.gif","txt":"新歌推荐","txt1":"推荐合口味的..."},
+								{"img":"zuixin_04.gif","txt":"Palette","txt1":"IU"},
+								{"img":"zuixin_06.gif","txt":"There's Nothi...","txt1":"Shawn Mendes"},
+								{"img":"zuixin_10.gif","txt":"I Don't(Remix)","txt1":"Mariah Carey/..."},
+								{"img":"zuixin_11.gif","txt":"一定要幸福","txt1":"张靓颖"},
+								{"img":"zuixin_12.jpg","txt":"暧昧","txt1":"薛之谦"}
+							],
+							"three":[
+								{"img":"zhubo_02.gif","txt":"麻婆豆腐滚滚来，水逆水逆..."},
+								{"img":"zhubo_04.gif","txt":"'陈楚生和他的朋友们'电..."},
+								{"img":"zhubo_06.gif","txt":"主播夏萌：好的婚姻，需要男..."},
+								{"img":"zhubo_10.gif","txt":"想放下一个人，你只需做到一点"},
+								{"img":"zhubo_11.gif","txt":"Ed Sheeran 清新小曲儿..."},
+								{"img":"zhubo_12.jpg","txt":"管什么能不能走到最后，爱一..."}
+							]
+					}
+			},
+			
+			
+			"alone":{
+					"head":[
+								{"txt":"独家放送"},{"txt":"推荐MV"}
+					],
+					"icon":{
+							"one":[
+									{"img":"dujia_02.jpg","txt":"Kate Uption&Ricky Martin 《对嘴假唱大挑》..."},
+									{"img":"dujia_03.jpg","txt":"美女计程车上翻唱《小幸运》，又甜又暖！"}
+							],
+							"two":[
+									{"img":"tuijian_02.gif","txt":"Something About You","txt1":"Chace/Yade Lauren"},
+									{"img":"tuijian_04.gif","txt":"Naked","txt1":"Christopher"},
+									{"img":"tuijian_07.gif","txt":"Good Life","txt1":"G-Eazy/Kehlani"},
+									{"img":"tuijian_08.jpg","txt":"陪你 微电影版","txt1":"范玮琪"}
+							]
+					}
+			},
+			
+			
+			"welfare":[
+						{"img":"banner-2_02.jpg","txt":"福利黑洞：万元内耳机听个响？200元也有好声音！"}
+			],
+			
+			
+			"sele":{
+						"head":[
+								{"txt":"精选专栏"}
+						],
+						"li":[
+								{
+									"span":"专栏",
+									"p":"《十念》：古风歌手小曲儿十年音乐之旅",
+									"span1":"阅读 33492",
+									"img":"jingxuan_03.gif"
+								},
+								{
+									"span":"专栏",
+									"p":"邓丽君的这些招牌歌曲，为何会定为禁歌？",
+									"span1":"阅读 49821",
+									"img":"jingxuan_05.gif"
+								},
+								{
+									"span":"专栏",
+									"p":"Oasis纪录片《超音速》：摇滚英雄最初的胜利",
+									"span1":"阅读 5262",
+									"img":"jingxuan_07.jpg"
+								}
+						]
+			}
+			
+			
+}
+
+

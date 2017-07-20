@@ -1,0 +1,110 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+a {
+  cursor: pointer; }
+
+html,
+body {
+  font-size: 62.5%; }
+
+.box .list {
+  width: 100%;
+  height: 100%;
+  -webkit-flex-grow: 1;
+  margin-bottom: 5rem;
+  margin-top: 7.6rem;
+  position: relative; }
+  .box .list .official {
+    width: 100%;
+    position: relative;
+    padding-top: 1rem; }
+    .box .list .official .p {
+      width: 99%;
+      border-left: 2px solid #d53b2c;
+      position: relative;
+      margin: 1rem 0;
+      display: flex;
+      -webkit-justify-content: space-between; }
+      .box .list .official .p a {
+        color: #353535;
+        font-size: 1.7rem;
+        position: relative;
+        left: 1rem; }
+    .box .list .official ul {
+      width: 100%;
+      border-top: 1px solid #e2e2e3;
+      position: relative; }
+      .box .list .official ul li {
+        width: 100%;
+        border-bottom: 1px solid #e2e2e3;
+        height: 7rem;
+        position: relative;
+        margin-bottom: 0.3rem; }
+        .box .list .official ul li a {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          -webkit-justify-content: space-between;
+          position: relative; }
+          .box .list .official ul li a .official_left {
+            width: 70%;
+            height: 100%;
+            padding: 0 0 1rem 1rem;
+            position: relative; }
+            .box .list .official ul li a .official_left .official_span {
+              color: #99999a;
+              padding: .5rem 0;
+              position: relative; }
+              .box .list .official ul li a .official_left .official_span span {
+                color: #D2D2D2;
+                position: absolute;
+                left: 10rem; }
+          .box .list .official ul li a .official_right {
+            width: 30%;
+            height: 100%;
+            position: relative; }
+            .box .list .official ul li a .official_right img {
+              width: 100%;
+              height: 100%;
+              position: relative; }
+  .box .list .total {
+    width: 100%;
+    position: relative; }
+    .box .list .total .p {
+      width: 99%;
+      border-left: 2px solid #d53b2c;
+      position: relative;
+      margin: 1rem 0; }
+      .box .list .total .p a {
+        color: #353535;
+        font-size: 1.8rem;
+        position: relative;
+        left: 1rem; }
+    .box .list .total ul {
+      width: 100%;
+      position: relative;
+      display: flex;
+      -webkit-justify-content: space-between;
+      flex-flow: wrap; }
+      .box .list .total ul li {
+        width: 32.5%;
+        float: left;
+        padding-bottom: 1rem; }
+        .box .list .total ul li img {
+          width: 100%; }
+        .box .list .total ul li p {
+          padding: 0.5rem;
+          color: #39393a;
+          font-size: 1.2rem; }
+          .box .list .total ul li p span {
+            position: relative;
+            color: #a5a5a5;
+            top: 0.2rem; }
+
+/*# sourceMappingURL=list.css.map */

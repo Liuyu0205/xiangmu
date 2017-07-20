@@ -1,0 +1,210 @@
+<link rel="stylesheet" href="view/radio/css/radio.css" />
+<!--头部选项卡开始-->
+<header>
+
+	<ul>
+		<li>
+			<a ui-sref="person">个性推荐</a>
+		</li>
+		<li>
+			<a ui-sref="song">歌单</a>
+		</li>
+		<li style="border-bottom: 2px solid #d53b2c;">
+			<a ui-sref="radio" style="color: #d53b2c;">主播电台</a>
+		</li>
+		<li>
+			<a ui-sref="list">排行榜</a>
+		</li>
+	</ul>
+
+</header>
+<!--头部选项卡结束-->
+<!--网页主体内容开始-->
+<div class="radio" id="radio">
+	<!--banner-->
+	<div class="banner swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img3/banner_02.jpg" alt="" /></div>
+			<div class="swiper-slide"><img src="img3/banner_02.jpg" alt="" /></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<!--bannerEnd-->
+
+	<!--分类-->
+	<div class="radio_class">
+		<ul>
+			<li ng-repeat="claHead in claHead">
+				<a href="#">
+					<img ng-src="img3/{{claHead.img}}" alt="" />
+					<span>{{claHead.txt}}</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--分类结束-->
+
+	<!--每天-->
+	<div class="everyDay">
+		<p class="p">
+			<a href="#">
+				{{everyHead.txt}}
+				<b></b>
+			</a>
+			<span>换一换</span>
+		</p>
+		<ul>
+			<li ng-repeat="everyLi in everyLi">
+				<a href="#">
+					<div class="everyDay_right">
+						<img ng-src="img3/{{everyLi.img}}" alt="" />
+					</div>
+					<div class="everyDay_left">
+						<p>
+							{{everyLi.txt}}
+						</p>
+						<span class="everyDay_span">
+							{{everyLi.txt1}}
+						</span>
+					</div>
+
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!--每天结束-->
+
+	<!--电台-->
+	<div class="electricity">
+		<p class="p">
+			<a href="#">
+				{{eleHead.txt}}
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="eleLi in eleLi">
+				<img ng-src="img3/{{eleLi.img}}" alt="" />
+				<p>{{eleLi.txt}}</p>
+			</li>
+		</ul>
+
+	</div>
+	<!--电台结束-->
+	<!--美文-->
+	<div class="reading">
+		<p class="p">
+			<a href="#">
+				{{readOne.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="readHotOne in readHotOne">
+				<img ng-src="img3/{{readHotOne.img}}" alt="" />
+				<p>{{readHotOne.txt}}</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="reading">
+		<p class="p">
+			<a href="#">
+				{{readTwo.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="readHotTwo in readHotTwo">
+				<img ng-src="img3/{{readHotTwo.img}}" alt="" />
+				<p>{{readHotTwo.txt}}</p>
+			</li>
+		</ul>
+	</div>
+	<div class="reading">
+		<p class="p">
+			<a href="#">
+				{{readThr.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="readHotThr in readHotThr">
+				<img ng-src="img3/{{readHotThr.img}}" alt="" />
+				<p>{{readHotThr.txt}}</p>
+			</li>
+		</ul>
+	</div>
+	<div class="reading">
+		<p class="p">
+			<a href="#">
+				{{readFour.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="readHotFour in readHotFour">
+				<img ng-src="img3/{{readHotFour.img}}" alt="" />
+				<p>{{readHotFour.txt}}</p>
+			</li>
+		</ul>
+	</div>
+	<!--美文结束-->
+
+	<!--分类s-->
+	<div class="cla">
+		<p class="p">
+			<a href="#">
+				{{hotHeadOne.txt}}
+			</a>
+		</p>
+		<div class="clas">
+
+			<div class="radio_clas" ng-repeat="hotIconOne in hotIconOne">
+				<ul>
+					<li>
+						<a href="#">
+							<img ng-src="img3/{{hotIconOne.img}}" alt="" />
+							<span>{{hotIconOne.txt}}</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img ng-src="img3/{{hotIconOne.img1}}" alt="" />
+							<span>{{hotIconOne.txt1}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="cla">
+		<p class="p">
+			<a href="#">
+				{{hotHeadTwo.txt}}
+			</a>
+		</p>
+		<div class="clas">
+
+			<div class="radio_clas" ng-repeat="hotIconTwo in hotIconTwo">
+				<ul>
+					<li>
+						<a href="#">
+							<img ng-src="img3/{{hotIconTwo.img}}" alt="" />
+							<span>{{hotIconTwo.txt}}</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img ng-src="img3/{{hotIconTwo.img1}}" alt="" />
+							<span>{{hotIconTwo.txt1}}</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<!--分类结束s-->
+</div>

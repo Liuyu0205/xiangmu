@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="view/list/css/list.css" />
+		<!--头部选项卡开始-->
+		<header>
+
+			<ul>
+				<li>
+					<a ui-sref="person">个性推荐</a>
+				</li>
+				<li>
+					<a ui-sref="song">歌单</a>
+				</li>
+				<li>
+					<a ui-sref="radio">主播电台</a>
+				</li>
+				<li style="border-bottom: 2px solid #d53b2c;">
+					<a ui-sref="list" style="color: #d53b2c;">排行榜</a>
+				</li>
+			</ul>
+
+		</header>
+		<!--头部选项卡结束-->
+	<!--网页主体内容开始-->
+	<div class="list" id="list">
+			<!--云音乐-->
+	<div class="official">
+		<p class="p">
+			<a href="#">
+				{{offHead.txt}}
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="offLi in offLi">
+				<a href="#">
+					<div class="official_right">
+						<img ng-src="img4/{{offLi.img}}" alt="" />
+					</div>
+					<div class="official_left">
+						<p class="official_span">
+							{{offLi.txt}}
+							<span>{{offLi.txt3}}</span>
+						</p>
+						<p class="official_span">
+							{{offLi.txt1}}
+							<span>{{offLi.txt4}}</span>
+						</p>
+						<p class="official_span">
+							{{offLi.txt2}}
+							<span>{{offLi.txt5}}</span>
+						</p>
+					</div>
+
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	<!--云音乐结束-->
+	
+	<!--全球榜-->
+	<div class="total">
+		<p class="p">
+			<a href="#">
+				{{toHeadO.txt}}
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="toIconO in toIconO">
+				<img ng-src="{{toIconO.img}}" alt="" />
+				<p>{{toIconO.txt}}</p>
+			</li>
+		</ul>
+	
+	</div>
+	<!--全球榜结束-->
+	
+	<!--用户榜-->
+	<div class="total">
+		<p class="p">
+			<a href="#">
+				{{toHeadT.txt}}
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="toIconT in toIconT">
+				<img ng-src="{{toIconT.img}}" alt="" />
+				<p>{{toIconT.txt}}</p>
+			</li>
+		</ul>
+	
+	</div>
+	<!--用户榜结束-->
+	</div>
+	<!--网页主体内容结束-->

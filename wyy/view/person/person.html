@@ -1,0 +1,171 @@
+<link rel="stylesheet" href="view/person/css/person.css" />
+<!--头部选项卡开始-->
+<header>
+	<ul>
+		<li style="border-bottom: 2px solid #d53b2c;">
+			<a ui-sref="person" style="color: #d53b2c;">个性推荐</a>
+		</li>
+		<li>
+			<a ui-sref="song">歌单</a>
+		</li>
+		<li>
+			<a ui-sref="radio">主播电台</a>
+		</li>
+		<li>
+			<a ui-sref="list">排行榜</a>
+		</li>
+	</ul>
+
+</header>
+<!--头部选项卡结束-->
+<!--网页主体内容开始-->
+<div class="person" id="person">
+
+<!--banner-->
+<div class="banner swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" ng-repeat="banner in banner">
+			<img ng-src="img1/{{banner.img}}" alt="" />
+		</div>
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<!--bannerEnd-->
+<!--icon-->
+	<div class="icon">
+	
+		<ul>
+			<li ng-repeat="icon in icon">
+				<a href="#"><img ng-src="img1/{{icon.img}}" alt="" />
+					<p>{{icon.txt}}</p>
+				</a>
+			</li>
+		</ul>
+	
+	</div>
+<!--iconEnd-->
+
+<!--推荐歌单-->
+
+	<div class="mend">
+		<p class="p">
+			<a href="#">
+				{{headOne.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="iconOne in iconOne">
+				<img ng-src="img1/{{iconOne.img}}" alt="" />
+				<p>{{iconOne.txt}}</p>
+			</li>
+		</ul>
+	
+	</div>
+
+<!--推荐歌单结束-->
+<!--独家放送-->
+	<div class="alone">
+		<p class="p">
+			<a href="#">
+				{{aloneOne.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="iconOne in aloneIconOne">
+				<img ng-src="img1/{{iconOne.img}}" alt="" />
+				<p>{{iconOne.txt}}</p>
+			</li>
+		</ul>
+	</div>
+<!--独家放送结束-->
+<!--福利黑洞-->
+	<div class="welfare">
+		<div>
+			<img ng-src="img1/{{welfare.img}}" alt="" />
+		</div>
+		<p>{{welfare.txt}}</p>
+	</div>
+<!--福利黑洞结束-->
+<!--最新音乐-->
+<div class="mend">
+		<p class="p">
+			<a href="#">
+				{{headTwo.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="iconTwo in iconTwo">
+				<img ng-src="img1/{{iconTwo.img}}" alt="" />
+				<p>{{iconTwo.txt}}<br/><span>{{iconTwo.txt1}}</span></p>
+			</li>
+		</ul>
+	
+	</div>
+<!--最新音乐结束-->
+<!--推荐MV-->
+<div class="alone">
+		<p class="p">
+			<a href="#">
+				{{aloneTwo.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="iconTwo in aloneIconTwo">
+				<img ng-src="img1/{{iconTwo.img}}" alt="" />
+				<p>{{iconTwo.txt}}<br/><span>{{iconTwo.txt1}}</span></p>
+			</li>
+		</ul>
+	</div>
+<!--推荐MV结束-->
+<!--精选专栏-->
+	<div class="select">
+		<p class="p">
+			<a href="#">
+				{{seleHead.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="seleLi in seleLi">
+				<a href="#">
+					<div class="select_left">
+						<p>
+							<span>{{seleLi.span}}</span>
+							{{seleLi.p}}
+						</p>
+						<span class="select_span">
+							{{seleLi.span1}}
+						</span>
+					</div>
+					<div class="select_right">
+						<img ng-src="img1/{{seleLi.img}}" alt="" />
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+<!--精选专栏结束-->
+<!--主播电台-->
+<div class="mend">
+		<p class="p">
+			<a href="#">
+				{{headThr.txt}}
+				<b></b>
+			</a>
+		</p>
+		<ul>
+			<li ng-repeat="iconThr in iconThr">
+				<img ng-src="img1/{{iconThr.img}}" alt="" />
+				<p>{{iconThr.txt}}</p>
+			</li>
+		</ul>
+	
+	</div>
+<!--主播电台结束-->
+
+</div>
+<!--网页主体内容结束-->

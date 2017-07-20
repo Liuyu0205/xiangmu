@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+a {
+  cursor: pointer; }
+
+html,
+body {
+  font-size: 62.5%; }
+
+.box .music {
+  width: 100%;
+  -webkit-flex-grow: 1;
+  margin-bottom: 5rem;
+  position: relative;
+  margin-top: 7.6rem; }
+
+/*# sourceMappingURL=music.css.map */

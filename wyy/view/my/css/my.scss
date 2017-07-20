@@ -1,0 +1,28 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    cursor: pointer;
+}
+html,
+body {
+    font-size: 62.5%;
+}
+@mixin pos($p:absolute) {
+    position: $p;
+}
+.box{
+    //网页主体内容开始
+    //  网页主体内容结束
+    .my{
+        width: 100%;
+        -webkit-flex-grow: 1;
+        margin-bottom: 5rem;
+        @include pos(relative);
+        margin-top: 7.6rem;
+    }
+}

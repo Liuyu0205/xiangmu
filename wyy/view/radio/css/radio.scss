@@ -1,0 +1,355 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+a {
+    cursor: pointer;
+}
+html,
+body {
+    font-size: 62.5%;
+}
+@mixin pos($p:absolute) {
+    position: $p;
+}
+.box {
+    //网页主体内容开始
+    .radio {
+        width: 100%;
+        height: 100%;
+        -webkit-flex-grow: 1;
+        margin-bottom: 5rem;
+        margin-top: 7.6rem;
+        //      banner
+        .banner {
+            width: 100%;
+            height: 10rem;
+            @include pos(relative);
+            .swiper-slide {
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            //分页器点的颜色
+            .swiper-pagination-bullet {
+                background: white;
+                opacity: 0.5;
+            }
+            //分页器当前点的颜色
+            .swiper-pagination-bullet-active {
+                background: #d53b2c;
+            }
+            //分页器背景
+            .swiper-pagination {
+                @include pos();
+                bottom: 0;
+            }
+        }
+        //      bannerEnd
+        //      分类
+        .radio_class {
+            width: 100%;
+            height: 4rem;
+            @include pos(relative);
+            border-bottom: 1px solid #e2e2e3;
+            ul {
+                width: 100%;
+                height: 100%;
+                @include pos(relative);
+                padding: 0.8rem 0;
+                li {
+                    width: 49.5%;
+                    height: 60%;
+                    float: left;
+                    @include pos(relative);
+                    text-align: center;
+                    &:nth-child(1) {
+                        border-right: 1px solid #e2e2e3;
+                    }
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        @include pos(relative);
+                        img {
+                            width: 20%;
+                            height: 100%;
+                            @include pos(relative);
+                        }
+                        span {
+                            font-size: 1.6rem;
+                            color: #333333;
+                            @include pos(relative);
+                            top: -0.8rem;
+                            left: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        //分类结束
+        //      每天
+        .everyDay {
+            width: 100%;
+            @include pos(relative);
+            margin: 2rem 0;
+            .p {
+                width: 99%;
+                border-left: 2px solid #d53b2c;
+                @include pos(relative);
+                margin: 1rem 0;
+                display: flex;
+                -webkit-justify-content: space-between;
+                a {
+                    color: #353535;
+                    font-size: 1.7rem;
+                    @include pos(relative);
+                    left: 1rem;
+                    b {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border: solid #707071;
+                        border-width: 0 0 0.0625rem 0.0625rem;
+                        display: inline-block;
+                        transform: rotate(230deg);
+                        @include pos(relative);
+                        top: 0;
+                    }
+                }
+                span {
+                    color: #353535;
+                    @include pos(relative);
+                    right: 1rem;
+                    top: 0.3rem;
+                }
+            }
+            ul {
+                width: 100%;
+                border-top: 1px solid #e2e2e3;
+                @include pos(relative);
+                li {
+                    width: 100%;
+                    border-bottom: 1px solid #e2e2e3;
+                    height: 7rem;
+                    @include pos(relative);
+                    margin-bottom: 0.3rem;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        -webkit-justify-content: space-between;
+                        @include pos(relative);
+                        .everyDay_left {
+                            width: 70%;
+                            height: 100%;
+                            padding: 1rem 0 1rem 1rem;
+                            @include pos(relative);
+                            p {
+                                color: #323233;
+                                font-size: 1.3rem;
+                                @include pos(relative);
+                            }
+                            .everyDay_span {
+                                color: #99999a;
+                                padding: 1rem 0;
+                                @include pos(relative);
+                                top: 1rem;
+                            }
+                        }
+                        .everyDay_right {
+                            width: 30%;
+                            height: 100%;
+                            @include pos(relative);
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                @include pos(relative);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //每天结束
+        //电台推荐
+        .electricity {
+            width: 100%;
+            @include pos(relative);
+            .p {
+                width: 99%;
+                border-left: 2px solid #d53b2c;
+                @include pos(relative);
+                margin: 1rem 0;
+                a {
+                    color: #353535;
+                    font-size: 1.8rem;
+                    @include pos(relative);
+                    left: 1rem;
+                }
+            }
+            ul {
+                width: 100%;
+                @include pos(relative);
+                display: flex;
+                -webkit-justify-content: space-between;
+                flex-flow: wrap;
+                li {
+                    width: 32.5%;
+                    float: left;
+                    padding-bottom: 1rem;
+                    img {
+                        width: 100%;
+                    }
+                    p {
+                        padding: 0.5rem;
+                        color: #39393a;
+                        font-size: 1.2rem;
+                        span {
+                            @include pos(relative);
+                            color: #a5a5a5;
+                            top: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        //电台结束
+        //美文
+        .reading {
+            width: 100%;
+            @include pos(relative);
+            .p {
+                width: 99%;
+                border-left: 2px solid #d53b2c;
+                @include pos(relative);
+                margin: 1rem 0;
+                a {
+                    color: #353535;
+                    font-size: 1.8rem;
+                    @include pos(relative);
+                    left: 1rem;
+                    b {
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border: solid #707071;
+                        border-width: 0 0 0.0625rem 0.0625rem;
+                        display: inline-block;
+                        transform: rotate(230deg);
+                        @include pos(relative);
+                        top: -0.2rem;
+                    }
+                }
+            }
+            ul {
+                width: 100%;
+                @include pos(relative);
+                display: flex;
+                -webkit-justify-content: space-between;
+                flex-flow: wrap;
+                li {
+                    width: 32.5%;
+                    float: left;
+                    padding-bottom: 1rem;
+                    img {
+                        width: 100%;
+                        height: 9rem;
+                    }
+                    p {
+                        padding: 0.5rem;
+                        color: #39393a;
+                        font-size: 1.2rem;
+                        span {
+                            @include pos(relative);
+                            color: #a5a5a5;
+                            top: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        //美文结束
+    }
+    //      分类
+    .cla {
+        width: 100%;
+        @include pos(relative);
+        .p {
+            width: 99%;
+            border-left: 2px solid #d53b2c;
+            @include pos(relative);
+            margin: 1rem 0;
+            a {
+                color: #353535;
+                font-size: 1.8rem;
+                @include pos(relative);
+                left: 1rem;
+                b {
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    border: solid #707071;
+                    border-width: 0 0 0.0625rem 0.0625rem;
+                    display: inline-block;
+                    transform: rotate(230deg);
+                    @include pos(relative);
+                    top: -0.2rem;
+                }
+            }
+        }
+        .clas {
+            width: 100%;
+            
+            @include pos(relative);
+            border-top: 1px solid #e2e2e3;
+            .radio_clas {
+                width: 100%;
+                height: 4rem;
+                @include pos(relative);
+                border-bottom: 1px solid #e2e2e3;
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    @include pos(relative);
+                    padding: 0.8rem 0;
+                    li {
+                        width: 49.5%;
+                        height: 60%;
+                        float: left;
+                        @include pos(relative);
+                        &:nth-child(1) {
+                            border-right: 1px solid #e2e2e3;
+                        }
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            @include pos(relative);
+                            left: 1.5rem;
+                            img {
+                                width: 20%;
+                                height: 100%;
+                                @include pos(relative);
+                            }
+                            span {
+                                font-size: 1.6rem;
+                                color: #333333;
+                                @include pos(relative);
+                                top: -0.6rem;
+                                left: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //分类结束
+    //  网页主体内容结束
+}

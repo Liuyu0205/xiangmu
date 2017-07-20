@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="view/song/css/song.css" />
+<!--头部选项卡开始-->
+<header>
+
+	<ul>
+		<li>
+			<a ui-sref="person">个性推荐</a>
+		</li>
+		<li style="border-bottom: 2px solid #d53b2c;">
+			<a ui-sref="song" style="color: #d53b2c;">歌单</a>
+		</li>
+		<li>
+			<a ui-sref="radio">主播电台</a>
+		</li>
+		<li>
+			<a ui-sref="list">排行榜</a>
+		</li>
+	</ul>
+
+</header>
+<!--头部选项卡结束-->
+
+<!--网页主体内容开始-->
+<div class="song" id="song">
+	<!--banner-->
+	<div class="banner">
+		<img src="img2/banner_02.jpg" alt="" />
+	</div>
+	<!--bannerEnd-->
+
+	<!--全部歌单-->
+	<div class="all">
+		<div class="alls">
+			<p>
+				{{allHead.txt}}
+				<b></b>
+			</p>
+
+		</div>
+		<div class="allUl">
+			<ul>
+				<li ng-repeat="allUl in allUl">
+					<a href="#">{{allUl.txt}}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--全部歌单结束-->
+
+	<!--类别-->
+	<div class="song_class">
+		<ul>
+			<li ng-repeat="Class in Class">
+				<img ng-src="img2/{{Class.img}}" alt="" />
+				<p>{{Class.txt}}</p>
+			</li>
+		</ul>
+	</div>
+	<!--类别结束-->
+</div>
+<!--网页主体内容结束-->
